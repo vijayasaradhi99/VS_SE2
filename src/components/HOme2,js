@@ -1,0 +1,50 @@
+import React, { useState } from 'react';
+import Figure from 'react-bootstrap/Figure';
+
+import './Home.css';
+
+const Home = () => {
+    const [name, setName] = useState('Vijaya Saradhi');
+    const [desc, setDesc] = useState(
+        'Welcome.'
+    );
+    return (
+        <>
+            <div className="container">
+            <div className = "row gx-2">
+                <div className='col'>
+                <Figure>
+                        <Figure.Image
+                            width={300}
+                            height={300}
+                            alt="300x300"
+                            src="./logo.svg"
+                        />
+                        <Figure.Caption>300 X 300</Figure.Caption>
+                    </Figure>
+                </div>
+                <div className='col'> <h2>{name}</h2>
+                    <p>{desc}</p></div>
+            </div>
+            </div>
+            <div className="container">
+            <div className = "row gx-2">
+            <div className = "col-12">
+                    <label>SET NAME</label>
+                  
+                    <input type="text" value={name}  onChange={(e) => setName(e.target.value)} className="margin"/>
+                </div>
+            </div>
+            <div className = "row gx-2"> 
+            <div className = "col-12">
+            <label>SET BIOGRAPHY</label> 
+                    <input type="text" value={desc} onChange={(e) => setDesc(e.target.value)}/>
+                </div>
+            </div>
+                </div>
+           
+        </>
+    );
+};
+
+export default Home;

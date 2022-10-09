@@ -1,0 +1,54 @@
+.cv {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #E3E4FA;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #E3E4FA;
+}
+
+.wrapper div {
+    margin: 30px;
+    background-color: #E3E4FA;
+   
+}
+
+h2 {
+    position: absolute;
+    left: 400px;
+    background-color: #E3E4FA;
+}
+
+p {
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    width: 800px;
+    text-align: left;
+    background-color: #E3E4FA;
+}
+
+input {
+    margin: 10px;
+    background-color: #E3E4FA;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    background-color: #E3E4FA;
+}
+
+.align div {
+    margin: 10px;
+    background-color: #E3E4FA;
+}
+.margin {
+    margin-left: 28px;
+    background-color: #E3E4FA;
+}
